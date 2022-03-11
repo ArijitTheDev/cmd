@@ -13,7 +13,7 @@ module.exports = {
       if(!args[0])
         return message.channel.send(new MessageEmbed()
             .setColor(ee.wrongcolor)
-            .setFooter(client.user.username + " | powered by: milrato.eu", client.user.displayAvatarURL())
+            .setFooter(client.user.username + " | Chill Vibes Utility", client.user.displayAvatarURL())
             .setTitle(`❌ ERROR | You didn't provided a Title, nor a Description`)
             .setDescription(`Usage: \`${prefix}embed <TITLE> ++ <DESCRIPTION>\``)
         );
@@ -22,7 +22,7 @@ module.exports = {
       let desc = userargs.slice(1).join(" ")
       message.channel.send(new MessageEmbed()
         .setColor(ee.color)
-        .setFooter(client.user.username + " | powered by: milrato.eu", client.user.displayAvatarURL())
+        .setFooter(client.user.username + " | Chill Vibes Utility", client.user.displayAvatarURL())
         .setTitle(title ? title : "")
         .setDescription(desc ? desc : "")
       )
@@ -30,7 +30,7 @@ module.exports = {
         console.log(String(e.stack).bgRed)
         return message.channel.send(new MessageEmbed()
             .setColor(ee.wrongcolor)
-            .setFooter(client.user.username + " | powered by: milrato.eu", client.user.displayAvatarURL())
+            .setFooter(client.user.username + " | Chill Vibes Utility", client.user.displayAvatarURL())
             .setTitle(`❌ ERROR | An error occurred`)
             .setDescription(`\`\`\`${e.message}\`\`\``)
         );
