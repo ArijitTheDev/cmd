@@ -2,7 +2,7 @@ const { ownerID } = require('../../owner.json')
 //const colors = require('./../../colors.json')
 
 module.exports = {
-      name: "dm2",
+      name: "dm",
       description: "DM a user in the guild",
       aliases: ['pm'],
     run: async (bot, message, args) => {
