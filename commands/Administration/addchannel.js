@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const config = require("../../botconfig/config.json");
 const ee = require("../../botconfig/embed.json");
-//const fs = require("fs")
+const fs = require("fs")
 module.exports = {
     name: "addchannel",
     category: "Setup",
