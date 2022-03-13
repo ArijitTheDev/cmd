@@ -1,7 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const config = require("../../botconfig/config.json");
 const ee = require("../../botconfig/embed.json");
-const ownerID = require ("../owner.json");
+const {ownerID} = require ("../../owner.json");
 module.exports = {
     name: "say",
     category: "Administration",
