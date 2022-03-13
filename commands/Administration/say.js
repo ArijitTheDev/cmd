@@ -1,6 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 const config = require("../../botconfig/config.json");
 const ee = require("../../botconfig/embed.json");
+const ownerID = require ("../owner.json");
 module.exports = {
     name: "say",
     category: "Administration",
@@ -10,6 +11,7 @@ module.exports = {
     description: "Resends your Text",
     run: async (client, message, args, user, text, prefix) => {
     try{
+        if(!message.channel.permissionsFor(message.member).has("MANAGE_MESSAGES") && !ownerID.includes(message.author.id)) return;
       if(!args[0])
         return message.channel.send(new MessageEmbed()
             .setColor(ee.wrongcolor)
