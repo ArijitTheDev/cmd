@@ -7,7 +7,7 @@ module.exports = {
       aliases: ['pm'],
     run: async (bot, message, args) => {
         
-        if(accessID.includes(message.author.id)) return;
+        if(!message.channel.permissionsFor(message.member).accessID.includes(message.author.id)) return;
 
 
       let user =
