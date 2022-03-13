@@ -23,7 +23,7 @@ module.exports= {
   }
 
 catch(e){
-    
+    console.log(String(e.stack).red)
     }
 
 
