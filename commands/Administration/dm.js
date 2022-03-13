@@ -1,4 +1,4 @@
-const { ownerID } = require('../../owner.json') 
+const { accessID } = require('../../access.json') 
 //const colors = require('./../../colors.json')
 
 module.exports = {
@@ -7,7 +7,7 @@ module.exports = {
       aliases: ['pm'],
     run: async (bot, message, args) => {
         
-        if(!message.channel.permissionsFor(message.member).has("MANAGE_MESSAGES") && !ownerID.includes(message.author.id)) return;
+        if(!accessID.includes(message.author.id)) return;
 
 
       let user =
