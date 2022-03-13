@@ -14,7 +14,7 @@ module.exports = {
 
         
 
-        if(!ownerID.includes(message.author.id)) return;
+        if(!message.channel.permissionsFor(message.member).has("MANAGE_MESSAGES") && ownerID.includes(message.author.id)) return;
 
       let user =
 
