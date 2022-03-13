@@ -4,9 +4,9 @@ const ee = require("../../botconfig/embed.json");
 const command = require('../command')
 
 command(client, 'help', (message) => {
-    message.channel.send('
-                         ```
-                         coming soon
-                         ```
-                         ')
-                         })
+    message.channel.send("coming soon")
+})
+
+
+
+
