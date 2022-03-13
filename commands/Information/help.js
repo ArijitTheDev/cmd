@@ -3,7 +3,7 @@ const config = require("../../botconfig/config.json");
 const ee = require("../../botconfig/embed.json");
 //const command = require('../command')
 
-module.exports{
+module.exports= {
     name: "help",
     category: "information",
     aliases: ["h","cmd"],
