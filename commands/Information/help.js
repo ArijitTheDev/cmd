@@ -11,12 +11,20 @@ module.exports= {
     usage: "help [command]",
   run: async(client, message, args, user, text, prefix) => {
       try{
+          if (args[0]) {
+           if (!cmd) {
+
+          return
           message.channel.send('coming soon')
           }
+              }
+        }
       }
   }
 
-
+catch(e){
+    
+    }
 
 
 
